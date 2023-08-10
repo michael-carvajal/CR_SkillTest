@@ -1,3 +1,15 @@
 #history{
     background-image: url("/Public/history-bg.png");
+    object-fit: cover;
+    background-position: 50% 15%;
+    position: relative;
+}
+
+.carousel {
+    background-color: #414f6b;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .79;
 }
