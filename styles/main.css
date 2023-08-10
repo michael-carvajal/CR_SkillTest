@@ -82,3 +82,20 @@ a {
 .sticky-nav a{
     color: #414f6b;
 }
+
+footer{
+    background-color: #414f6b;
+}
+.footer-logo{
+        display: flex;
+        width: 960px;
+        margin: 0 auto;
+        justify-content: space-between;
+        height: 75px;
+        align-items: center;
+    }
+
+    .footer-logo p{
+        color: #63769d;
+        font-style: italic;
+    }
