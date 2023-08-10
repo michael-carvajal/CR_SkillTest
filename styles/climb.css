@@ -2,3 +2,7 @@
     height: 190px;
     padding: 20px;
 }
+
+#schedule-container{
+    background-image: url("/Public/climb-bg.png");
+}
