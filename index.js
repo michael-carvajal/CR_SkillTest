@@ -42,19 +42,34 @@ window.onload = e => {
 
     const events = document.querySelector('.events');
     console.log(events);
-    for (let key in mountain1) {
-        const { date, trail } = mountain1[key]
-        console.log(date, trail);
-        const newTrailContainer = document.createElement('div')
-        const dateEle = document.createElement('p')
-        dateEle.innerText = date
-        const trailEle = document.createElement('p')
-        trailEle.innerText = trail
-        newTrailContainer.append(dateEle, trailEle)
-        newTrailContainer.className = 'ind-event'
-        events.appendChild(newTrailContainer)
+
+    function displaySchedule(mountainObj) {
+        for (let key in mountainObj) {
+            const { date, trail } = mountainObj[key]
+            console.log(date, trail);
+            const newTrailContainer = document.createElement('div')
+            const dateEle = document.createElement('p')
+            dateEle.innerText = date
+            const trailEle = document.createElement('p')
+            trailEle.innerText = trail
+            newTrailContainer.append(dateEle, trailEle)
+            newTrailContainer.className = 'ind-event'
+            events.appendChild(newTrailContainer)
+
+        }
 
     }
+    displaySchedule(mountain1)
+    const [domMount1, domMount2] = document.querySelectorAll('.mountains-container p')
+    console.log(domMount1, domMount2);
+    domMount1.addEventListener('click', e => {
+        domMount1.className = 'active-mountain'
+        domMount2.className = ''
+    })
+    domMount2.addEventListener('click', e => {
+        domMount2.className = 'active-mountain'
+        domMount1.className = ''
+    })
 
     console.log('hello world')
 
