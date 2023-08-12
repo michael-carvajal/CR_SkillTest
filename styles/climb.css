@@ -36,3 +36,30 @@
         width: 300px;
         justify-content: space-between;
     }
+
+
+.mountains{
+        display: flex;
+        height: 40px;
+        align-items: center;
+        gap: 15px;
+        background-color: #414f6b;
+    }
+.mountains-container{
+    width: 960px;
+    margin: 0 auto;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        background-color: #414f6b;
+    }
+    .mountains-container p {
+        padding: 1%;
+        border-left: 2px solid #414f6b;
+        color: whitesmoke;
+    }
+
+    .active-mountain{
+        background-color: whitesmoke;
+        color: #414f6b !important;
+    }
