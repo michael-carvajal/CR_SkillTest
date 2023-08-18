@@ -66,6 +66,7 @@ window.onload = e => {
         if (domMount1.className === 'active-mountain') {
             return
         }
+        events.innerHTML = '';
         domMount1.className = 'active-mountain'
         domMount2.className = ''
         displaySchedule(mountain1)
@@ -74,6 +75,7 @@ window.onload = e => {
         if (domMount2.className === 'active-mountain') {
             return
         }
+        events.innerHTML = '';
         domMount2.className = 'active-mountain'
         domMount1.className = ''
         displaySchedule(mountain2)
