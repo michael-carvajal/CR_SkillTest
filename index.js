@@ -63,12 +63,20 @@ window.onload = e => {
     const [domMount1, domMount2] = document.querySelectorAll('.mountains-container p')
     console.log(domMount1, domMount2);
     domMount1.addEventListener('click', e => {
+        if (domMount1.className === 'active-mountain') {
+            return
+        }
         domMount1.className = 'active-mountain'
         domMount2.className = ''
+        displaySchedule(mountain1)
     })
     domMount2.addEventListener('click', e => {
+        if (domMount2.className === 'active-mountain') {
+            return
+        }
         domMount2.className = 'active-mountain'
         domMount1.className = ''
+        displaySchedule(mountain2)
     })
 
     console.log('hello world')
