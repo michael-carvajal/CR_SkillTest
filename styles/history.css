@@ -22,3 +22,21 @@
         padding-top: 106px;
         flex-direction: column;
     }
+
+    .page {
+        position: relative;
+        width: 295px;
+    }
+
+
+
+.page > p{
+    font-size: 72px;
+}
+
+.page > span{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 48px;
+}
