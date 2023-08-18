@@ -13,3 +13,12 @@
     width: 100%;
     opacity: .79;
 }
+
+.header-wrapper{
+        display: flex;
+        width: 960px;
+        margin: 0 auto;
+        gap: 50px;
+        padding-top: 106px;
+        flex-direction: column;
+    }
